@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:id="@+id/teksjudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Katalog Fashion"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="19sp"
+        android:layout_marginBottom="24dp"
+        />
+
+    <ImageView
+        android:id="@+id/gambarBaju"
+        android:layout_width="wrap_content"
+        android:layout_height="225dp"
+        android:src="@drawable/lk_2"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="16dp"
+        />
+    <TextView
+        android:id="@+id/textMerek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brand Pakaian"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="17sp"
+        />
+    <TextView
+        android:id="@+id/textHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Harga"
+        />
+    <TextView
+        android:id="@+id/textDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Detail Pakaian"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/btnPertama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:text="|&lt;"
+            android:layout_margin="4dp"
+            />
+        <Button
+            android:id="@+id/btnSebelumnya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:text="&lt;"
+            android:layout_margin="4dp"
+            />
+        <Button
+            android:id="@+id/btnBerikutnya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:text="&gt;"
+            android:layout_margin="4dp"
+            />
+        <Button
+            android:id="@+id/btnTerakhir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:text="&gt;|"
+            android:layout_margin="4dp"
+            />
+    </LinearLayout>
+</LinearLayout>
